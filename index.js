@@ -12,7 +12,7 @@ client.on('message', async(msg) => {
     if(msg.author.bot) return;
     if(!msg.guild) return;
 
-    var array = ['vagina', 'Put', 'Your', 'bad', 'words', 'in', 'these', 'boxes', 'for', 'automod'];
+    var array = ['hey', 'Put', 'Your', 'bad', 'words', 'in', 'these', 'boxes', 'for', 'automod'];
 
     if(!msg.member.hasPermission('MANAGE_MESSAGES')){
         if(array.some(w => ` ${msg.content.toLowerCase()} `.includes(` ${w} `))){
