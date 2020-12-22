@@ -206,7 +206,7 @@ client.on("message", async message => {
   
   
   if(!message.guild) {
-      const guild = await client.guilds.cache.get('544714186698260490');
+      const guild = await client.guilds.cache.get('YOUR-GUILD-ID');
       if(!guild) return;
 
       const main = guild.channels.cache.find((x) => x.name == message.author.id)
